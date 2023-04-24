@@ -51,6 +51,7 @@ nav .navbar .links li{
   justify-content: space-between;
   list-style: none;
   padding: 0 14px;
+	cursor:pointer;
 }
 nav .navbar .links li a{
   height: 100%;
