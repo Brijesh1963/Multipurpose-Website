@@ -1,0 +1,61 @@
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10 10 10;
+    padding: 10 10 10;
+    margin-left: 10px;
+  }
+
+  footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+ }
+ footer .logo{
+    margin-bottom: 30px;
+ }
+
+ footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+ }
+ footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+
+ }
+ footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+ }
+ .payment img{
+    width: 30%;
+    height: 30%;
+ }
+ 
+ footer .follow{
+    margin-top: 20px;
+ }
+ footer .follow i{
+    color: #d9248e;
+    padding-right: 4px;
+    cursor: pointer;
+ }
+ footer .follow i:hover{
+    color: #606063;
+ }
+ footer a :hover{
+    color:#088178;
+ }
+  .copyright{
+    text-align: center;
+    color: #1a1a1a;
+  }
+  h2{
+    color: blue;
+  }
