@@ -1,190 +1,105 @@
-* {
-    padding: 0;
+*{
     margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Montserrat";
-  }
-  section {
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 0, 106);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    width: 100%;
     height: 100vh;
-    width: 100%;
-    background-image:url('https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000');
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    /* box-shadow: 0px 0px 30px #00000010; */
-   background-image:url('https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000');
-  
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  .form-group {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid rgba(251, 247, 247, 0.952);
-    margin-top: 5px;
-    background: transparent;
-  }
-  .container input{
-    color: #e7f5ff;
-  }
-  #firstName , #lastName , #email , #massage {
-    color: #fffffe;
-  }
-  #lastName {
-    color: #fafbf6;
-  }
-  
-   #email {
-    color: #fafbf9;
-   }
-  
-  #massage{
-    color: #fbfcf8;
-  }
-  
-  #mobile{
-    color: #fbfcf8;
-  }
-  label{
-    cursor: default;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 420px;
+    background-color: rgb(7, 7, 65);
+    column-gap: 20px;
+    border-radius: 20px;
+}
+.info{
+    display: grid;
+    place-items: center;
+}
+.info .text{
     color: white;
-  }
-  textarea {
-    resize: vertical;
-  }
-  button[type="submit"] {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 8px;
-    font-family: "Montserrat";
-    color: rgb(1, 11, 17);
-    text-align: center;
+    margin: 30px 0 0 20px;
+    /* 30=top 0 0 20=left */
+    letter-spacing: 3px;
+}
+.info .text span{
+    line-height: 1.6;
+}
+.social-button button{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid red;
     cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease white;
-    background: transparent;
-    border-style: dotted;
-  
-  }
-  button[type="submit"]:hover {
-    background-color: rgb(90, 192, 244);
-  }
-  #status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-  }
-  #status.error {
-    background-color: rgb(250, 129, 92);
+
+}
+.social-button i{
+    font-size: 18px;
+    color: red;
+}
+.social-button button:hover{
+    background-color: red;
     color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-   
-  
-  body{
+}
+.social-button i:hover{
+    color: white;
+}
+
+form{
+    margin-top: 30px;
+}
+.input-control{
     width: 100%;
-  }
-  .logo{
-    height: 40px;
-    width: 50px;
-     box-sizing: border-box;
-  }
-  #header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background: lightgreen;
-    background-color: rgb(176, 238, 93);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-     z-index: 999;
-     position: sticky;
-     top: 0;
-     left: 0;
-  }
-  #navber{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #navber li{
-    list-style: none;
-    padding: 0 20px;
+    margin-left: 50px;
     position: relative;
-  }
-  #navber li a{
-    text-decoration: none;
+}
+form label{
+    color: white;
+    font-size: 15px;
+}
+
+form input, textarea{
+    width: 80%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 2px solid white;
     font-size: 16px;
-    font-weight: 600;
-    color: violet ;
-  }
-  #navber li a:hover,
-  #navber li a.active
-  {
-  color: blue;
-  transition:  ease;
-  } 
-  #navber li a.active::after,
-  #navber li a:hover::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: blue;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-  
-  }
-  #mobile {
-    /* display: none; */
-    align-items: center;
-    color: wheat;
-  }
-  #close{
-    display: none;
-  }
-  
-  .header {
+    color: white;
+    padding: 10px 0;
+}
+
+form button{
+    width: 40%;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    color: red;
+}
+form button:hover{
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width: 768px){
+    .form-container{
+        grid-template-columns: 500px;
+        grid-template-rows: 400px 430px;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
+}
+
+.header {
     padding: 0 2.4rem;
     height: 4rem;
     display: flex;
@@ -195,7 +110,7 @@
   }
   
   .header .logo {
-    height: 50px;
+    height: 5px;
   }
   
   .navbar-list {
@@ -221,7 +136,7 @@
     color: #364fc7;
     background-color:yellow;
     border-radius: 150%;
-  
+
   }
   
   .mobile-navbar-btn {
@@ -231,9 +146,9 @@
   }
   
   .mobile-nav-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: #ec77d4;
+    width: 3rem;
+    height: 3rem;
+    color: #212529;
   }
   
   .mobile-nav-icon[name="close-outline"] {
@@ -243,9 +158,8 @@
     .mobile-navbar-btn {
       display: block;
       z-index: 999;
-      border: 3px solid #ef67e6;
+      border: 3px solid #212529;
       color: #212529;
-      
     }
   
     .header {
@@ -260,7 +174,7 @@
     
       width: 100%;
       height: 100vh;
-      background: #3fde47;
+      background: #e7f5ff;
       position: absolute;
       top: 0;
       left: 0;
@@ -294,8 +208,8 @@
       display: none;
     }
   }
-  
-  /* @media (max-width: 35em) {
+
+  @media (max-width: 35em) {
     .header {
       padding: 0 2.4rem;
     }
@@ -304,68 +218,3 @@
       width: 60%;
     }
   }
-   */
- 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10 10 10;
-    padding: 10 10 10;
-    margin-left: 10px;
-  }
-
-  footer .col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
- }
- footer .logo{
-    margin-bottom: 30px;
- }
-
- footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
- }
- footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-
- }
- footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #000;
-    margin-bottom: 10px;
- }
- .payment img{
-    width: 30%;
-    height: 30%;
- }
- 
- footer .follow{
-    margin-top: 20px;
- }
- footer .follow i{
-    color: #d9248e;
-    padding-right: 4px;
-    cursor: pointer;
- }
- footer .follow i:hover{
-    color: #606063;
- }
- footer a :hover{
-    color:#088178;
- }
-  .copyright{
-    text-align: center;
-    color: #1a1a1a;
-  }
-  h2{
-    color: blue;
-  }
-  
-  
-  
