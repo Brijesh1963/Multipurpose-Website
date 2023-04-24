@@ -136,23 +136,23 @@ body{
 
     #feature .fe-box:nth-child(2) a{
         background-color: aqua;
-        color: #364fc7;
+        color: #010413;
     }
     #feature .fe-box:nth-child(3) a{
         background-color: yellowgreen;
-        color: red;
+        color: rgb(47, 3, 3);
     }
     #feature .fe-box:nth-child(4) a{
-        background-color: rgb(58, 8, 105);
-        color: #03e9f4;
+        background-color: rgb(210, 168, 250);
+        color: #032122;
     }
     #feature .fe-box:nth-child(5) a{
-        background-color: tomato;
-        color: #088178;
+        background-color: rgb(255, 182, 169);
+        color: #011a19;
     }
     #feature .fe-box:nth-child(6) a{
-        background-color:#d9248e;
-        color: blue;
+        background-color:#faa1d5;
+        color: rgb(2, 2, 36);
     }
 
     #product1{
@@ -703,7 +703,7 @@ body{
         justify-content: center;
         align-items: flex-start;
         background-image: url(subsidy\ 2.jpg);
-        min-width: 50%;
+        min-width: 80%;
         height: 50vh;
         background-size: cover;
         background-position: center;
