@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>top</title>                                    
+<!--<title>Website with Login & Registration Form</title>-->
+<link rel="stylesheet" href="login.css" />
+<!-- Unicons -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">Farmly</a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="index.html" class="nav_link">Home</a>
+          <!-- <a href="#" class="nav_link">Product</a>
+          <a href="#" class="nav_link">Services</a>
+          <a href="#" class="nav_link">Contact</a> -->
+        </li>
+      </ul>
+
+      <button class="button" id="form-open">Login</button>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- Login From -->
+      <div class="form login_form">
+        <form method="post">
+          <h2>Login</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot password?</a>
+          </div>
+
+          <button class="button">Login Now</button>
+
+          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </form>
+      </div>
+
+      <!-- Signup From -->
+      <div class="form signup_form">
+        <form  >
+          <h2>Signup</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required  name="email"/>
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" name="password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" name="confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+<a href="index.html">
+          <button class="button">Signup Now</button> </a>
+
+          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="image">
+      <div class="box">
+      <a href="shop1.html">
+      <img src="front5.webp" alt="sorry">
+      <p>User</p>
+    </a>
+  </div>
+    <div class="box">
+    <a href="farmer.html">
+      <img src="front4.jpg" alt="sorrt">
+      <p>Farmer</p>
+    </a>
+    </div>
+  </div>
+  </section>
+
+  <footer class="section-1">
+    <div class="col">
+      <h1>Farmly</h1>
+      <h4>contact</h4>
+      <p>
+        <strong>Address:</strong>15/15 mohan roy para lane
+        ,khagra,berhampore,murshidabad
+      </p>
+      <p><strong>phone:</strong>+918945975330</p>
+      <p><strong>hours:</strong> 10.00 - 10.00,mon - fri</p>
+    </div>
+    <div class="col">
+      <h4>about</h4>
+      <a href="about.html">about us</a>
+      <a href="#">delivery information</a>
+      <a href="#">privecy policy</a>
+      <a href="#">terms & condition</a>
+      <a href="#">contact us</a>
+    </div>
+ 
+  </footer>
+  <div class="copyright">
+    <p>@ all copyright reserved to us</p>
+  </div>
+
+  <script src="login.js"></script>
+  <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5j72lvWZpbRvo7zDSg5xhslQ64BE_TUXQVBhnc22cDtuBNAEvkZEPAJour-_GWm2Fug/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+ 
