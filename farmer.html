@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  />
+    <link rel="stylesheet" href="organic1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+         <nav class="navbar">
+           <div class="content">
+             <div class="logo">
+               <a href="#">Farmly</a>
+             </div>
+             <ul class="menu-list">
+               <div class="icon cancel-btn">
+                 <i class="fas fa-times"></i>
+               </div>
+               <li><a href="farmer.html">Home</a></li>
+               <li><a href="subsidy.html">SUBSIDIES</a></li>
+               <li><a href="fartilizer.html">FARTILIZER</a></li>
+               <li><a href="econew.html">ECO FARMING</a></li>
+               <li><a href="contact.html">CONTACT US</a></li>
+               <li><a href="shop.html">SHOP</a></li>
+               <li><a href="photo.html">PHOTO</a></li>
+             </ul>
+             <div class="icon menu-btn">
+               <i class="fas fa-bars"></i>
+             </div>
+           </div>
+         </nav>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="index.js"></script>
+  <section id="hero">
+    <h4>If agriculture goes wrong,<br> nothing else <br> will have a chance to go right in the country</h4>
+    <h2>by</h2>
+    <h1>M. S. Swaminathan</h1>
+    <div class="new">
+      <a href="contact.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Learn More
+       </a>
+      </div>
+  </section>
+  <section id="feature" class="section-p1">
+    <div class="fe-box">
+      <img src="free shipping.png" alt="" />
+      <a href="shop.html" target="_blank">Free shipping</a> 
+    </div>
+    <div class="fe-box">
+      <img src="online order.png" alt="" />
+      <a href="shop.html" target="_blank">Onlone order</a> 
+    </div>
+    <div class="fe-box">
+      <img src="eco11.jpg" alt="" />
+      <a href="econew.html" target="_blank">Eco Farming</a> 
+    </div>
+    <div class="fe-box">
+      <img src="fertilizer.png" alt="" />
+      <a href="fartilizer.html" target="_blank">Fartilizer</a> 
+    </div>
+    <div class="fe-box">
+      <img src="save soil.png" alt="" />
+      <a href="https://consciousplanet.org/about-us" target="_blank">Save Soil</a> 
+    </div>
+    <div class="fe-box">
+      <img src="service.png" alt="" />
+      <a href="shop.html" target="_blank">24/7 service</a> 
+    </div>
+  </section>
+  <section id="banner3">
+    <div class="banner-box">
+      <h2>subsidy</h2>
+      <div class="new">
+        <a href="subsidy.html" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Learn More
+         </a>
+        </div>
+    </div>
+
+    <div class="banner-box banner-box2">
+      <h2>Eco Farming</h2>
+      <div class="new">
+        <a href="econew.html" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Learn More
+         </a>
+        </div>
+    </div>
+    <div class="banner-box banner-box3">
+      <h2>Fartilizer</h2>
+      <div class="new">
+        <a href="fartilizer.html" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Learn More
+         </a>
+        </div>
+    </div>
+  </section>
+
+  <footer class="section-1">
+    <div class="col">
+      <h1>Farmly</h1>
+      <h4>contact</h4>
+      <p>
+        <strong>Address:</strong>15/15 mohan roy para lane
+        ,khagra,berhampore,murshidabad
+      </p>
+      <p><strong>phone:</strong>+918945975330</p>
+      <p><strong>hours:</strong> 10.00 - 10.00,mon - fri</p>
+    </div>
+    <div class="col">
+      <h4>about</h4>
+      <a href="about.html">about us</a>
+      <a href="#">delivery information</a>
+      <a href="#">privecy policy</a>
+      <a href="#">terms & condition</a>
+      <a href="#">contact us</a>
+    </div>
+ 
+  </footer>
+  <div class="copyright">
+    <p>@ all copyright reserved to us</p>
+  </div>
+
+</body>
+</html>
