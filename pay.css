@@ -66,6 +66,13 @@ footer {
 width: 200px;
 box-shadow: 1px 1px 300px forestgreen;
   }
+.photo img{
+    height:200px;
+    width:200px;
+    padding:40px;
+    margin-top:60px;
+    margin-left:20px;
+    margin-bottom:30px;
 
   .header {
    position: fixed;
